@@ -1,6 +1,6 @@
  import "https://vjs.zencdn.net/7.10.2/video.js"
 
-console.log("He importado el player");
+console.log("Play");
 
 ps5.classList.remove(`hidden`);
 
