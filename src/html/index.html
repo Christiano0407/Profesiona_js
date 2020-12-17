@@ -4,14 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!-- compatible -->
-    <meta name="description" content="AyÚda para el SEO"/> 
+    <meta name="description" content="SEO"/> 
     <meta name="robots" content="index, follow"/><!--  Ayuda con el SEO, y autorización  -->
     <link rel="shortcut icon" href="../assets/icon/icon-caret-down.svg" type="image/png">
     <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <link href="https://vjs.zencdn.net/7.10.2/video-js.css" rel="stylesheet" />
+    <link
+    href="https://unpkg.com/@videojs/themes@1/dist/city/index.css"
+    rel="stylesheet"
+    />
     <link rel="stylesheet" href="../css/style.css">
     <title>Pro-Javascript</title>
 </head>
 <body>
-    <script src="../js/index.js"></script>
+    <header>
+        <nav></nav>
+    </header>
+    <main>
+      <div class="wrapper">
+         <div class="video" id="video">
+             <picture>
+                 <img src="../assets/img/aud2.jpg" alt="Image background">
+             </picture>
+          </div> 
+          <video class="video-js vjs-theme-city hidden" id="ps5" width="720" height="480" autoplay control>
+              <source src="../assets/img/BigBuckBunny.mp4">
+          </video> 
+      </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="../js/index.js" type="module"></script>
 </body>
 </html>
