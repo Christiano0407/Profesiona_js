@@ -1,0 +1,20 @@
+{
+  "name": "profesional_js",
+  "version": "1.0.0",
+  "description": "Course Profesional Javascript with Platzi",
+  "main": "src/js/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Christiano0407/Profesiona_js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Christiano0407/Profesiona_js/issues"
+  },
+  "homepage": "https://github.com/Christiano0407/Profesiona_js#readme"
+}
