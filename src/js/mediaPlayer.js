@@ -2,7 +2,7 @@
 /* button.addEventListener(`click`, function(){
 console.log(`Click`);
 }); */
-export default function MediaPlayer(config){
+ function MediaPlayer(config){
     this.media = config.el;
     }
      MediaPlayer.prototype.play = function(){
@@ -12,3 +12,5 @@ export default function MediaPlayer(config){
             this.media.pause();
         }
     }
+
+export default MediaPlayer;

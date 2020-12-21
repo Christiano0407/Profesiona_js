@@ -1,4 +1,4 @@
-import MediaPlayer from "./mediaPlayer";
+import MediaPlayer from "./mediaPlayer.js";
 
 const button = document.getElementById(`playButton`);
 const video = document.querySelector(`video`);
