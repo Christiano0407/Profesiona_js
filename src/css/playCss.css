@@ -30,12 +30,12 @@ header {
     text-align: center;
     padding: 3rem 0;
     color: var(--just-white);
+    background-color: var(--black);
 }
 header > h1 {
     font-weight: normal;
     font-style: italic;
     font-size: 2rem;
-    background-color: var(--black);
 }
 main {
     padding: 1rem 0;
@@ -45,6 +45,6 @@ main {
     margin: 0 auto;
     max-width: 960px;
 }
-.movie {
+.video {
     width: 100%;
 }
