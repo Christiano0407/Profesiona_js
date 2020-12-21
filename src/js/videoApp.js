@@ -5,11 +5,18 @@ const video = document.querySelector(`video`);
 /* button.addEventListener(`click`, function(){
 console.log(`Click`);
 }); */
-function MediaPlayer(){}
-MediaPlayer.prototype.play = function(){
-    video.play();
+function MediaPlayer(config){
+this.media = config.el;
 }
-const player = new MediaPlayer();
+MediaPlayer.prototype.play = function(){
+    if(this.media.paused){
+        this.media.play();
+    }else {
+        this.media.pause();
+    }
+}
+
+const player = new MediaPlayer({ el:video });
 button.onclick = () => player.play();
 /* button.onclick = () => video.play(); */
 
