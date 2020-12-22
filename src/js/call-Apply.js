@@ -8,7 +8,8 @@ const chris = {
 };
 
 //saludar();
-//Método Call:
+//Método CALL: 
+//Separados por una (,).
 saludar.call(chris);
 //2)
 function caminar(metros, direccion){
@@ -17,5 +18,26 @@ function caminar(metros, direccion){
 caminar.call(chris, 500, `Norte`);
 
 //APPLY:
+//Se llama (Argumentos) con un ARRAY[].
+/* caminar.apply(chris,[800, `Oeste`]); */
+//otro:
+const valores = [900,`Sur`];
+caminar.apply(chris, valores); 
+
+//BIND:
+// Pasar argumentos ya existentes. 
+const luisa = {
+    name: "Luisa",
+    apellido: "Rosas"
+}
+const luisaSaluda = saludar.bind(luisa);
+luisaSaluda(); 
+//segundo-ejemplo:
+const alma = {
+    name: "Alma",
+    apellido: "Velázquez"
+}
+const almaSaluda = saludar.bind(alma);
+almaSaluda()
 
 
