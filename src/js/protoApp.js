@@ -64,7 +64,7 @@ zelda.saludar();  */
 //Herencia prototipal. 
 //Constructor.
 
-//1)
+//1) Algunos ejemplos:
 /* function Hero(name){
     const hero = Object.create(Hero.prototype);
     hero.name = name;
@@ -79,4 +79,43 @@ Hero.prototype.saludar = function(){
 const zelda = Hero("Zelda");
 zelda.saludar();  */
 
-//2)
+//New (azúcar sintáctica)
+/*  function Hero(name){
+    //this = Object.create(Hero.prototype);
+    this.name = name;
+
+    //return this;
+}
+
+Hero.prototype.saludar = function(){
+    console.log(`New: ${this.name}`);
+}
+
+const zelda = new Hero("Zelda");
+zelda.saludar();  
+const link = new Hero("Link");
+link.saludar();  */
+
+//2)Herencia:
+function Hero(name){
+    this.name = name;
+}
+
+Hero.prototype.saludar = function(){
+    console.log(`Hola, yo soy ${this.name}`); 
+}
+const zelda = new Hero("Zelda"); 
+
+//Propiedades de la instancia:
+console.log(`Name:`,zelda.name );
+//Propiedades de la clase:
+console.log(`saludar:`, zelda.saludar); 
+//Propiedades heredadas ej:toString:
+console.log(`toString:`, zelda.toString); 
+//hasOwnProperty (De dónde sale toString o esto?):
+console.log(
+    `Zelda.hasOwnProperty(name)`,
+    zelda.hasOwnProperty(`name`)
+); 
+//Object.getPrototypeOf(zelda); 
+//Inspección prototipo:
