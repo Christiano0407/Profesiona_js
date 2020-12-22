@@ -40,4 +40,11 @@ const alma = {
 const almaSaluda = saludar.bind(alma);
 almaSaluda()
 
+//BUTTON:
+const buttons = document.getElementsByClassName("call-to-action");
 
+//Nodelist 
+//Buttons como THIS.
+Array.prototype.forEach.call(buttons, button => {
+    button.onclick = () => console.log("Sistema en Peligro!");
+})
